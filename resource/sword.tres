@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3 uid="uid://u5e72sxbiuco"]
+
+[ext_resource type="Script" uid="uid://cdlxqrntkm3c8" path="res://script/resource/ability_data.gd" id="1_6eqll"]
+[ext_resource type="Texture2D" uid="uid://nsu582cs3rpi" path="res://sprite/tile_0103.png" id="1_6rjou"]
+
+[resource]
+script = ExtResource("1_6eqll")
+id = "1"
+name = "sword"
+description = "朝最近的敌人投射飞刀"
+icon = ExtResource("1_6rjou")
+max_level = 5
+metadata/_custom_type_script = "uid://cdlxqrntkm3c8"

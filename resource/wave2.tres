@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EnemyWaveData" format=3 uid="uid://3ogat2rfdo8g"]
+
+[ext_resource type="Script" uid="uid://rikxndsdsowd" path="res://script/resource/enemy_wave_data.gd" id="1_ekuga"]
+[ext_resource type="Script" uid="uid://devbnqfmqchhm" path="res://script/resource/wave_stage.gd" id="2_osbtk"]
+[ext_resource type="PackedScene" uid="uid://dfo5tq6tv6cgc" path="res://sence/enemy/enemy_axolot.tscn" id="3_osbtk"]
+
+[sub_resource type="Resource" id="Resource_osbtk"]
+script = ExtResource("2_osbtk")
+stage_end = 1.0
+enemy_type = ExtResource("3_osbtk")
+enemy_number = 3
+metadata/_custom_type_script = "uid://devbnqfmqchhm"
+
+[resource]
+script = ExtResource("1_ekuga")
+wave_number = 2
+wave_duration = 10.0
+wave_stages = Array[ExtResource("2_osbtk")]([SubResource("Resource_osbtk")])
+metadata/_custom_type_script = "uid://rikxndsdsowd"

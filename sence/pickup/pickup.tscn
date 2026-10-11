@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d345j3oobirci"]
+
+[ext_resource type="Script" uid="uid://bbn3d58nn7so7" path="res://sence/pickup/pickup.gd" id="1_npydq"]
+
+[node name="Pickup" type="Node2D" unique_id=1097270703]
+script = ExtResource("1_npydq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1812151233]
+collision_layer = 32
+collision_mask = 65
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=19140620]

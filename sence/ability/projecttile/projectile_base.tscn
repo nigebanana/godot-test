@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cxao5xxicly0f"]
+
+[ext_resource type="Script" uid="uid://cjyylica0o72f" path="res://sence/ability/projecttile/projectile_base.gd" id="1_3a85i"]
+[ext_resource type="PackedScene" uid="uid://dg7ae6uq2n8rk" path="res://sence/enemy/hitbox_component.tscn" id="2_fcic6"]
+
+[node name="ProjectileBase" type="Node2D" unique_id=1898091957]
+script = ExtResource("1_3a85i")
+lifetime = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=458143787]
+
+[node name="HitboxComponent" parent="." unique_id=1458006944 instance=ExtResource("2_fcic6")]
+collision_layer = 4
+collision_mask = 9
+
+[node name="LifetimeTimer" type="Timer" parent="." unique_id=2012064836]
+
+[node name="Trail" type="Line2D" parent="." unique_id=486580773]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1785102878]
+
+[node name="Visuals" type="Node2D" parent="." unique_id=1870040018]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Visuals" unique_id=1303520340]
+
+[node name="PointLight2D" type="PointLight2D" parent="Visuals" unique_id=719956123]

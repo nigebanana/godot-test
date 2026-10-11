@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bo0tfiwsid60m"]
+
+[ext_resource type="PackedScene" uid="uid://cgws3kpicm6mj" path="res://sence/ability/ability_base.tscn" id="1_f6c44"]
+[ext_resource type="Script" uid="uid://3e7de7jteqau" path="res://sence/ability/fireball_ability.gd" id="2_i301k"]
+
+[node name="FireballAbility" unique_id=1156693727 instance=ExtResource("1_f6c44")]
+script = ExtResource("2_i301k")
+cooldown_time = 2.0

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cgws3kpicm6mj"]
+
+[ext_resource type="Script" uid="uid://cwb7d071jq2ap" path="res://sence/ability/ability_base.gd" id="1_vtypk"]
+
+[node name="AbilityBase" type="Node2D" unique_id=1156693727]
+script = ExtResource("1_vtypk")
+
+[node name="Components" type="Node" parent="." unique_id=1473606563]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Components" unique_id=1727277766]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Components" unique_id=2129350334]
+
+[node name="CooldownTime" type="Timer" parent="Components" unique_id=832885084]
+
+[node name="Visuals" type="Node" parent="." unique_id=842021755]
+
+[node name="Sprite2D" type="Sprite2D" parent="Visuals" unique_id=717410783]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Visuals" unique_id=1404309455]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=71321472]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=695454832]

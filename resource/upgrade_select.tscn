@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://nh8bywydn2o6"]
+
+[ext_resource type="Script" uid="uid://dwaqmwu8s501t" path="res://resource/upgrade_select.gd" id="1_vcsfm"]
+[ext_resource type="PackedScene" uid="uid://ccebdrlakod45" path="res://resource/upgrade_card.tscn" id="2_4f0ya"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3p32"]
+bg_color = Color(0.7979445, 0.818836, 0.9780871, 1)
+
+[node name="UpgradeSelect" type="CanvasLayer" unique_id=973935488 node_paths=PackedStringArray("card_container")]
+process_mode = 3
+script = ExtResource("1_vcsfm")
+upgrade_card_scene = ExtResource("2_4f0ya")
+card_container = NodePath("PanelContainer/MarginContainer/CardContainer")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=2088024093]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -209.0
+offset_right = 400.0
+offset_bottom = 209.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_e3p32")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=504847682]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="CardContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1986172810]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="UpgradeCard" parent="PanelContainer/MarginContainer/CardContainer" unique_id=1767530015 instance=ExtResource("2_4f0ya")]
+layout_mode = 2
+
+[node name="UpgradeCard2" parent="PanelContainer/MarginContainer/CardContainer" unique_id=472175385 instance=ExtResource("2_4f0ya")]
+layout_mode = 2
+
+[node name="UpgradeCard3" parent="PanelContainer/MarginContainer/CardContainer" unique_id=594062942 instance=ExtResource("2_4f0ya")]
+layout_mode = 2

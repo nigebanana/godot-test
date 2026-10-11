@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://ch3aklc71exto"]
+
+[ext_resource type="Script" uid="uid://8r1ypld73d7g" path="res://sence/canvasLayer/end_sence.gd" id="1_1kgi0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3fkc"]
+bg_color = Color(0.20528525, 0.52792484, 0.897363, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0.0030554626, 0.017797843, 0.055877, 0.6)
+shadow_size = 2
+
+[node name="EndSence" type="CanvasLayer" unique_id=1487913458]
+process_mode = 3
+script = ExtResource("1_1kgi0")
+
+[node name="Label" type="Label" parent="." unique_id=807972179]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -64.0
+offset_right = 160.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 128
+text = "胜利"
+horizontal_alignment = 1
+
+[node name="Start Button" type="Button" parent="." unique_id=914974698]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -130.0
+offset_top = -105.0
+offset_right = 130.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_p3fkc")
+text = "重新开始"

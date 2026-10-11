@@ -1,0 +1,2 @@
+extends AbilityData
+class_name DaggerAbilityData

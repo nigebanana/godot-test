@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ij74tcrqmclg"]
+
+[ext_resource type="Script" uid="uid://b5omqgwxwqojb" path="res://sence/camera/camera_2d.gd" id="1_u0e42"]
+
+[node name="Camera2D" type="Camera2D" unique_id=1489383048 node_paths=PackedStringArray("target", "tilemap")]
+zoom = Vector2(2, 2)
+script = ExtResource("1_u0e42")
+target = NodePath("")
+tilemap = NodePath("")

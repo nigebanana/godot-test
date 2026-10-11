@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://ccebdrlakod45"]
+
+[ext_resource type="Script" uid="uid://c1nrvfsu0dcnf" path="res://resource/upgrade_card.gd" id="1_vwi7c"]
+[ext_resource type="Texture2D" uid="uid://nsu582cs3rpi" path="res://sprite/tile_0103.png" id="1_yf7ti"]
+
+[node name="UpgradeCard" type="PanelContainer" unique_id=1767530015 groups=["upgrade_card"]]
+offset_right = 265.0
+offset_bottom = 361.0
+size_flags_horizontal = 3
+script = ExtResource("1_vwi7c")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1652421464]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=592867470]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=830851932]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_yf7ti")
+
+[node name="UpgradeCardNameLabel" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=28699991]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_stretch_ratio = 5.0
+text = "匕首
+史诗武器
+"
+horizontal_alignment = 1
+
+[node name="UpgradeCardDescriptionLabel" type="Label" parent="VBoxContainer" unique_id=24132291]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 6.0
+text = "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+autowrap_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1025775534]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ConfirmButton" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=688475873]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "确定"
+
+[node name="RecycleButton" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1217692726]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "回收"

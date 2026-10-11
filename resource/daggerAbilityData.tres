@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DaggerAbilityData" format=3 uid="uid://d0ndeb6s5xj5n"]
+
+[ext_resource type="Script" uid="uid://l0r7mqqk01r8" path="res://script/resource/dagger_ability_data.gd" id="1_2y5gu"]
+[ext_resource type="Script" uid="uid://bc35gi0t71ll1" path="res://script/resource/dagger_ability_stats.gd" id="2_i6p5f"]
+
+[sub_resource type="Resource" id="Resource_i6p5f"]
+script = ExtResource("2_i6p5f")
+metadata/_custom_type_script = "uid://bc35gi0t71ll1"
+
+[resource]
+script = ExtResource("1_2y5gu")
+stats = SubResource("Resource_i6p5f")
+metadata/_custom_type_script = "uid://l0r7mqqk01r8"

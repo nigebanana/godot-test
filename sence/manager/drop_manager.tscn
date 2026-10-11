@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://gw1iatqyyhob"]
+
+[ext_resource type="Script" uid="uid://ce4xhfgjhr1tv" path="res://sence/manager/drop_manager.gd" id="1_ddigx"]
+
+[node name="DropManager" type="Node" unique_id=1813085136]
+script = ExtResource("1_ddigx")

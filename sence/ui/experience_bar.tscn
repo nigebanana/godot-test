@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c2csq8amo2gur"]
+
+[ext_resource type="Script" uid="uid://bsr65djlvbn6j" path="res://sence/ui/experience_bar.gd" id="1_8xnfi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uoaqy"]
+bg_color = Color(0.43138963, 0.7829329, 0.9794448, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[node name="ExperienceBar" type="CanvasLayer" unique_id=227632749]
+script = ExtResource("1_8xnfi")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=322019802]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="MarginContainer" unique_id=985154130]
+custom_minimum_size = Vector2(0, 6)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_uoaqy")
+max_value = 1.0
+value = 0.2
+show_percentage = false

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cub4rnoi351d5"]
+
+[ext_resource type="PackedScene" uid="uid://cgws3kpicm6mj" path="res://ability/ability_base.tscn" id="1_qmkxl"]
+[ext_resource type="Script" uid="uid://drdo4lunmtc8o" path="res://ability/dagger_ability.gd" id="2_ig118"]
+
+[node name="DaggerAbility" unique_id=1156693727 instance=ExtResource("1_qmkxl")]
+script = ExtResource("2_ig118")
+damage = null
+speed = null
+max_distance = null
+lifetime = null
+piercing = null
+homing_strength = null
+
+[node name="Timer" parent="Components" parent_id_path=PackedInt32Array(1473606563) index="0" unique_id=832885084]
+autostart = true

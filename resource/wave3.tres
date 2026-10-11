@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyWaveData" format=3 uid="uid://d3dt2jwdsqlfn"]
+
+[ext_resource type="Script" uid="uid://rikxndsdsowd" path="res://script/resource/enemy_wave_data.gd" id="1_yrdtl"]
+[ext_resource type="Script" uid="uid://devbnqfmqchhm" path="res://script/resource/wave_stage.gd" id="2_hdll2"]
+
+[sub_resource type="Resource" id="Resource_a50re"]
+script = ExtResource("2_hdll2")
+metadata/_custom_type_script = "uid://devbnqfmqchhm"
+
+[resource]
+script = ExtResource("1_yrdtl")
+wave_stages = Array[ExtResource("2_hdll2")]([SubResource("Resource_a50re")])
+metadata/_custom_type_script = "uid://rikxndsdsowd"

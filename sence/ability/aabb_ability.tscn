@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cwhwn7ss15y76"]
+
+[ext_resource type="PackedScene" uid="uid://cgws3kpicm6mj" path="res://sence/ability/ability_base.tscn" id="1_xouwy"]
+
+[node name="AABBAbility" unique_id=1156693727 instance=ExtResource("1_xouwy")]

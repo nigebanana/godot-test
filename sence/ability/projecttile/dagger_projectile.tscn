@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bcia700mge0m2"]
+
+[ext_resource type="PackedScene" uid="uid://cxao5xxicly0f" path="res://sence/ability/projecttile/projectile_base.tscn" id="1_t3equ"]
+[ext_resource type="Script" uid="uid://bxkugawo58avp" path="res://sence/ability/projecttile/dagger_projectile.gd" id="2_f8ljy"]
+[ext_resource type="Texture2D" uid="uid://nsu582cs3rpi" path="res://sprite/tile_0103.png" id="3_reh0j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_reh0j"]
+radius = 4.0
+
+[node name="DaggerProjectile" unique_id=1898091957 instance=ExtResource("1_t3equ")]
+script = ExtResource("2_f8ljy")
+rotation_speed = 10.0
+fade_out_time = 0.2
+impact_strength = 5.0
+lifetime = 2.0
+piercing = 1
+homing_strength = 5.0
+bounces = 3
+
+[node name="Sprite2D" parent="." index="0" unique_id=458143787]
+rotation = 1.5707964
+texture = ExtResource("3_reh0j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent" parent_id_path=PackedInt32Array(1458006944) index="0" unique_id=83560210]
+shape = SubResource("CircleShape2D_reh0j")
+
+[node name="Visuals" parent="." index="5" unique_id=1870040018]
+visible = false

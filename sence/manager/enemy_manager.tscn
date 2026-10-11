@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bfritd65trdp"]
+
+[ext_resource type="Script" uid="uid://6d4fnxja0edn" path="res://sence/manager/enemy_manager.gd" id="1_jcgge"]
+
+[node name="EnemyManager" type="Node" unique_id=183620099]
+script = ExtResource("1_jcgge")
+
+[node name="Timer" type="Timer" parent="." unique_id=1020048328]

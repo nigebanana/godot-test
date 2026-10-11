@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dcg66dls7ccqh"]
+
+[sub_resource type="GDScript" id="GDScript_7xq4l"]
+script/source = "extends ResourcePreloader
+class_name EnemyWaveData
+
+@export var wave_number : int = 1
+@export var enemy_types : Array[PackedScene]          # 可用敌人场景
+@export_range(0, 100, 1, \"prefer_slider\") var enemy_weights : Array[int]              # 对应权重（长度需一致）
+@export var spawn_interval : float = 2.0               # 生成间隔（秒）
+@export var max_concurrent_enemies : int = 20          # 最大同时存在敌人数量
+@export var wave_duration : float = 60.0                # 波次持续时间（秒），0表示无限
+"
+
+[node name="EnemyWaveData" type="ResourcePreloader" unique_id=1577464877]
+script = SubResource("GDScript_7xq4l")
+enemy_weights = Array[int]([0, 0])
